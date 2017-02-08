@@ -1,20 +1,21 @@
-# free.sh
- Get rid of AUT Login on servers
-## Introduction
-With the beginning of the AUT policies for internet usage, servers has encountered lots of problems. To get
-rid of this new policy, I wrote this bash script. Hope it helps :)
+# FAUTLogin
+*Based on free.sh from Iman Tabrizian*
 
+## Introduction
+Amirkabir university of technology create new challenge for student, **Internet monitoring service**.
+Let's login from terminal to do more funny things !
 
 ## Running
-Running is pretty simple:  
+Running is pretty simple:
+
 ```sh
-git clone https://github.com/Tabrizian/free.sh  && cd free.sh
 # For logging in with default arguments
-./free
+./login
 # For logging in with your username and password
-./free yourautusername password
+./login username password
 # For logging out
 ./logout
 ```
-**NOTE:** Use it **without** your postfix i.e. *@aut.ac.ir*.  
+
+**NOTE:** Use it **without** your postfix i.e. *@aut.ac.ir*.
 By default it logins with the ```test``` username and ```test``` password.
