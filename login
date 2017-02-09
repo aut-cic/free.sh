@@ -1,7 +1,11 @@
 #!/bin/bash
 
-username=${1:-"test"}
-password=${2:-"test"}
+echo "Welcome to AUT Login system !"
+echo -n "Enter your username and press [ENTER]: "
+read username
+echo -n "Enter your password and press [ENTER]: "
+read -s password
+echo
 
 code=`curl -k -s -o /dev/null -w "%{http_code}" \
     -X POST \
