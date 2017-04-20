@@ -1,11 +1,17 @@
 #!/bin/bash
 
-echo "Welcome to AUT Login system !"
-echo -n "Enter your username and press [ENTER]: "
-read username
-echo -n "Enter your password and press [ENTER]: "
-read -s password
-echo
+echo "FAUTLogin by parham.alvani @ 2016"
+
+if [ $# -lt 2 ]; then
+	echo -n "[FAUTLogin] > Enter your username and press [ENTER]: "
+	read username
+	echo -n "[FAUTLogin] > Enter your password and press [ENTER]: "
+	read -s password
+	echo
+else
+	username=$1
+	password=$2
+fi
 
 code=`curl -k -s -o /dev/null -w "%{http_code}" \
     -X POST \
@@ -14,7 +20,7 @@ code=`curl -k -s -o /dev/null -w "%{http_code}" \
     "https://login.aut.ac.ir/login"`
 
 if [ $code == '302' ]; then
-	echo "Login was successful."
+	echo "[FAUTLogin] > Login was successful."
 else
-	echo "Login was failed."
+	echo "[FAUTLogin] > Login was failed."
 fi
