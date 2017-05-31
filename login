@@ -20,11 +20,12 @@ else
 	password=$2
 fi
 
-code_login=`curl -k -s -o /dev/null -w "%{http_code}" \
+`curl -k -s -o /dev/null \
 	-X POST \
 	-H "Content-Type: application/x-www-form-urlencoded" \
 	-d "erase-cookie=false&password=$password&popup=false&username=$username" \
 	"https://login.aut.ac.ir/login"`
+code_login=`curl -k -s -o /dev/null -w "%{http_code}" -X GET "https://internet.aut.ac.ir/"`
 
 if [ $code_login == '302' ]; then
 	echo "[FAUTLogin] > Login was successful."
