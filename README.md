@@ -7,8 +7,8 @@
 Amirkabir university of technology create new challenge for student, **Internet monitoring service**.
 Let's login from terminal to do more funny things !
 
-## Running
-Running is pretty simple:
+## Run
+Run is pretty simple:
 
 ```sh
 # interactive mode login
