@@ -1,8 +1,10 @@
 #!/bin/bash
 
+echo "free.sh by AUT-CEIT @ 2016"
+
 `curl -k -s -o /dev/null \
 	-H "Content-Type: application/x-www-form-urlencoded" \
 	-d 'erase-cookie=true' \
 	"http://login.aut.ac.ir/logout"`
 
-echo "Logout was successful."
+echo "[free.sh] > Logout was successful."

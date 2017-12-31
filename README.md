@@ -1,4 +1,4 @@
-# FAUTLogin
+# free.sh
 
 *Based on [free.sh](https://github.com/tabrizian/free.sh) from Iman Tabrizian*
 

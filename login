@@ -1,18 +1,18 @@
 #!/bin/bash
 
-echo "FAUTLogin by parham.alvani @ 2016"
+echo "free.sh by AUT-CEIT @ 2016"
 
 code_status=`curl -k -s -o /dev/null -w "%{http_code}" -X GET "https://internet.aut.ac.ir/"`
 if [ $code_status == '302' ]; then
-	echo "[FAUTLogin] > You are already login"
+	echo "[free.sh] > You are already login"
 	exit 0
 fi
 
 
 if [ $# -lt 2 ]; then
-	echo -n "[FAUTLogin] > Enter your username and press [ENTER]: "
+	echo -n "[free.sh] > Enter your username and press [ENTER]: "
 	read username
-	echo -n "[FAUTLogin] > Enter your password and press [ENTER]: "
+	echo -n "[free.sh] > Enter your password and press [ENTER]: "
 	read -s password
 	echo
 else
@@ -28,7 +28,7 @@ fi
 code_login=`curl -k -s -o /dev/null -w "%{http_code}" -X GET "https://internet.aut.ac.ir/"`
 
 if [ $code_login == '302' ]; then
-	echo "[FAUTLogin] > Login was successful."
+	echo "[free.sh] > Login was successful."
 else
-	echo "[FAUTLogin] > Login was failed."
+	echo "[free.sh] > Login was failed."
 fi
