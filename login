@@ -29,6 +29,8 @@ code_login=`curl -k -s -o /dev/null -w "%{http_code}" -X GET "https://internet.a
 
 if [ $code_login == '302' ]; then
 	echo "[free.sh] > Login was successful."
+	exit 0
 else
 	echo "[free.sh] > Login was failed."
+	exit 1
 fi

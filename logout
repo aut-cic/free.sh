@@ -8,3 +8,4 @@ echo "free.sh by AUT-CEIT @ 2016"
 	"http://login.aut.ac.ir/logout"`
 
 echo "[free.sh] > Logout was successful."
+exit 0
