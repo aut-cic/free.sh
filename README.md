@@ -15,6 +15,7 @@ curl -k -s -o /dev/null \
 	-d "erase-cookie=false&password=$password&popup=false&username=$username" \
 	"https://login.aut.ac.ir/login"`
 ```
+Make sure to replace ```$username``` with your username and ```$password``` with your password.
 
 ## Run
 Run is pretty simple:
