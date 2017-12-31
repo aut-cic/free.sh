@@ -7,6 +7,15 @@
 Amirkabir university of technology create new challenge for student, **Internet monitoring service**.
 Let's login from terminal to do more funny things !
 
+## Manual
+```sh
+curl -k -s -o /dev/null \
+	-X POST \
+	-H "Content-Type: application/x-www-form-urlencoded" \
+	-d "erase-cookie=false&password=$password&popup=false&username=$username" \
+	"https://login.aut.ac.ir/login"`
+```
+
 ## Run
 Run is pretty simple:
 
@@ -14,7 +23,7 @@ Run is pretty simple:
 # interactive mode login
 ./login
 
-# login
+# detach mode login
 ./login username password
 
 # logout
