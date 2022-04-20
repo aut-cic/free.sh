@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "free.sh by AUT-CEIT @ 2016"
+echo "free.sh by Iman Tabrizian @ 2016"
 
-`curl -k -s -o /dev/null \
+curl -k -s -o /dev/null \
 	-H "Content-Type: application/x-www-form-urlencoded" \
 	-d 'erase-cookie=true' \
-	"http://login.aut.ac.ir/logout"`
+	"http://login.aut.ac.ir/logout"
 
 echo "[free.sh] > Logout was successful."
 exit 0
