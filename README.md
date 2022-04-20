@@ -5,7 +5,7 @@
 ## Introduction
 
 Amirkabir university of technology create new challenge for student, **Internet monitoring service**.
-Let's login from terminal to do more funny things !
+Let's login from terminal to do more funny things!
 
 ## Manual
 ```sh
