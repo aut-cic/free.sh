@@ -44,7 +44,7 @@ login() {
 		return 0
 	else
 		echo "[free.sh] > Login was failed."
-		exit 1
+		return 1
 	fi
 }
 
@@ -69,6 +69,6 @@ login "$@"
 if [ "$loop" = true ]; then
 	while true; do
 		login "$username" "$password"
-		sleep 5
+		sleep 1
 	done
 fi
