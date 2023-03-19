@@ -1,6 +1,9 @@
-# free.sh
+<h1 align="center">free.sh</h1>
+<h6 align="center"><i>Based on <a href="https://github.com/tabrizian/free.sh">free.sh</a> from Iman Tabrizian</i></h6>
 
-_Based on [free.sh](https://github.com/tabrizian/free.sh) from Iman Tabrizian_
+<p align="center">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/aut-cic/free.sh/sh-lint.yaml?logo=github&style=for-the-badge">
+</p>
 
 ## Introduction
 
